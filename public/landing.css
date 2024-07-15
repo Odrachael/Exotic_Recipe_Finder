@@ -97,7 +97,7 @@ section {
 }
 
 .features.card {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 20px;
     margin: 20px;
@@ -107,15 +107,18 @@ section {
 
 .features.card h2 {
     margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .features.card .feature-list {
     overflow: hidden;
     position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 150px; /* Adjust based on the number of features */
 }
 
 .features.card .feature-list ul {
+    font-size:20px;
     position: relative;
     animation: slide 15s linear infinite;
 }
@@ -148,16 +151,18 @@ footer p {
 .datetime {
     display: inline-block;
     padding: 5px;
-    border-radius: 5px;
-    background: #d35400;
+    border-radius: 50px;
+    background: #37c005;
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
 @media (max-width: 600px) {
     .hero {
         padding: 60px 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
     }
 
     .logo {

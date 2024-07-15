@@ -244,14 +244,16 @@ footer {
 /* style for index.html */
 
 /* Add your CSS styles here */
+/* Add your CSS styles here */
 body {
     font-family: Arial, sans-serif;
     background-size: cover;
-    color: #fff;
     background: url('image.jpg/image4.jpg') no-repeat center center fixed;
     background-size: cover;
-    
+    margin: 0;
+    padding: 20px;
 }
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -298,7 +300,9 @@ body {
 header {
     text-align: center;
     padding: 20px;
+    font-size: 20px;
     background: rgba(0, 0, 0, 0.5);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .search {
@@ -309,9 +313,11 @@ header {
 .search input {
     padding: 10px;
     font-size: 16px;
-    width: 300px;
+    width: 80%;
+    max-width: 300px;
     border-radius: 5px;
     border: none;
+    box-sizing: border-box;
 }
 
 .search button {
@@ -336,12 +342,14 @@ header {
 }
 
 .recipe {
-    background:#edc837 ;
+    background: #edc837;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 .recipe img {
@@ -355,7 +363,6 @@ header {
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -365,7 +372,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; /* Adjust this value if you need more space between the logo and the header text */
+    margin-bottom: 20px;
 }
 
 .logo-container {
@@ -373,8 +380,35 @@ footer {
 }
 
 .logo {
-    max-width: 100px; /* Adjust the logo size as needed */
+    max-width: 100px;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .search input {
+        width: 100%;
+    }
+
+    .menu-button {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .recipe {
+        width: 90%;
+    }
+
+    .menu-button {
+        font-size: 25px;
+    }
+}
+
 
 /* about css */
 .footer {
