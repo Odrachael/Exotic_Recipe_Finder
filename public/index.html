@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moore's African Recipe Finder</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script>
+        // Redirection script
+        window.onload = function() {
+            // Check if the user has visited before
+            if (!localStorage.getItem('hasVisited')) {
+                // Redirect to landing.html if not visited before
+                window.location.href = 'landing.html';
+                // Set the flag in localStorage
+                localStorage.setItem('hasVisited', 'true');
+            }
+        };
+    </script>
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
